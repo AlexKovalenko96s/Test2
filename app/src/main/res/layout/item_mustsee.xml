@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:id="@+id/tv_user"
+            android:layout_width="0dp"
+            android:layout_height="31dp"
+            android:layout_marginEnd="26dp"
+            android:text="Not authorized"
+            tools:layout_constraintTop_creator="1"
+            tools:layout_constraintRight_creator="1"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <ImageView
+            android:id="@+id/im_mustSeeItem"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginBottom="134dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintLeft_creator="1"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="8dp"
+            app:layout_constraintVertical_bias="0.976" />
+
+        <TextView
+            android:id="@+id/tv_nameMustSee"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="4dp"
+            android:gravity="center"
+            android:text="qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            tools:layout_constraintTop_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintBottom_creator="1"
+            app:layout_constraintBottom_toTopOf="@+id/im_mustSeeItem"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="14dp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_user"
+            tools:layout_constraintLeft_creator="1"
+            android:layout_marginBottom="19dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/tv_mustSeeItemNumber"
+            android:layout_width="0dp"
+            android:layout_height="18dp"
+            android:text="Number :"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintBottom_creator="1"
+            android:layout_marginStart="11dp"
+            android:layout_marginEnd="11dp"
+            tools:layout_constraintLeft_creator="1"
+            app:layout_constraintBottom_toTopOf="@+id/tv_mustSeeItemEmail"
+            android:layout_marginBottom="14dp" />
+
+        <TextView
+            android:id="@+id/tv_mustSeeItemAddress"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="Address :"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.523"
+            tools:layout_constraintTop_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintBottom_creator="1"
+            app:layout_constraintBottom_toTopOf="@+id/tv_mustSeeItemNumber"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@+id/im_mustSeeItem"
+            tools:layout_constraintLeft_creator="1"
+            android:layout_marginBottom="15dp"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tv_mustSeeItemEmail"
+            android:layout_width="0dp"
+            android:layout_height="19dp"
+            android:text="Email :"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintBottom_creator="1"
+            android:layout_marginStart="11dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="11dp"
+            tools:layout_constraintLeft_creator="1"
+            android:layout_marginBottom="50dp" />
+
+        <Button
+            android:id="@+id/btn_like"
+            android:layout_width="143dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="225dp"
+            android:layout_marginStart="230dp"
+            android:layout_marginTop="325dp"
+            android:onClick="like"
+            android:text="Button"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>
